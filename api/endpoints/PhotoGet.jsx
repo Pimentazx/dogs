@@ -18,11 +18,6 @@ const PhotoGet = () => {
         });
     }
 
-
-
-
-
-
     return (
         <form onSubmit={handleSubmit}>
             <input type="text" value={id} onChange={(target) => setId(target.value)}/>
