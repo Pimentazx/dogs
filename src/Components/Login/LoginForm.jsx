@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Input from "../Forms/Input";
 import Button from "../Forms/Button";
-import UserForm from "../../Hooks/userForm";
+import UseForm from "../../Hooks/useForm";
 import Error from "../Helpers/Error";
 import { TOKEN_POST, USER_GET } from "../../api";
 import { UserContext } from "../../UserContext";
@@ -11,8 +11,8 @@ import styles from "./LoginForm.module.css";
 import stylesBtn from "../Forms/Button.module.css";
 
 const LoginForm = () => {
-  const username = UserForm();
-  const password = UserForm();
+  const username = UseForm();
+  const password = UseForm();
   
   const { userLogin, error, loading, login } = React.useContext(UserContext);
   
