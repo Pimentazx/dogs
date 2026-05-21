@@ -1,0 +1,24 @@
+.PhotoPost {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.PhotoPost img {
+    margin-bottom: 1rem;
+}
+
+.preview {
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center center;
+}
+
+.preview::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    height: 0px;
+
+}

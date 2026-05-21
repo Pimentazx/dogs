@@ -1,3 +1,4 @@
+import { number } from "prop-types";
 import React from "react";
 
 
@@ -9,6 +10,10 @@ const types = {
     password: {
         regex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/,
         message: "A senha precisa conter 8 caracteres, sendo uma letra maiúscula, uma minúscula, um número e um caractere especial",
+    },
+    number: {
+        regex: /^\d+$/,
+        message: "Utilize apenas números",
     },
 
 }
