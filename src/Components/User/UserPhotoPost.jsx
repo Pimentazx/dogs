@@ -1,12 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./UserPhotoPost.module.css";
 import Input from "../Forms/Input";
 import Button from "../Forms/Button";
 import useForm from "../../Hooks/useForm";
 import useFetch from "../../Hooks/useFetch";
 import { PHOTO_POST } from "../../api";
-import { preview } from "vite";
-import Error from "../Helper/Error";
+import Error from "../Helpers/Error";
 
 const UserPhotoPost = () => {
     const nome = useForm();
@@ -41,7 +41,7 @@ const UserPhotoPost = () => {
     }
 
     return (
-        <section className={"${styles.PhotoPost} animeLeft"}>
+        <section className={`${styles.PhotoPost} animeLeft`}>
             <form onSubmit={handleSubmit}>
                 <Input label="Nome" type="text" name="nome" { ...nome } />
                 <Input label="Peso" type="number" name="peso" { ...peso } />
